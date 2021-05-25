@@ -1,8 +1,12 @@
-# useFetch
+# useForm
 
 ex:
 
 ```
-    const url = 'icarly.com/chars';
-    const { data: null, loading: true, error:null } = useFetch(url);
+    const initialForm = {
+        name: '',
+        age: 0,
+        id: 0
+    }
+    const [values, handleInputChange, reset] = useForm(initialForm);
 ```
